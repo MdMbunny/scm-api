@@ -3,7 +3,7 @@
  * Plugin Name:         SCM API
  * Plugin URI:          http://studiocreativo-m.it/
  * Description:         SCM Plugin Description
- * Version:             1.0.0
+ * Version:             1.0.1
  * Author:              Studio Creativo M
  * Author URI:          http://studiocreativo-m.it/
  * License:             http://www.gnu.org/licenses/gpl-3.0.html
@@ -94,8 +94,8 @@ add_action( 'scm_action_content_none', 'scm_api_redirect' );
 // *****************************************************
 
 function scm_api_redirect( $screen ){
-    if( strpos( $screen, '/API' ) ){
-        wp_redirect( SCM_API_URI_API . 'API/index.html' );
+    if( endsWith( $screen, '/API' ) ){
+        wp_redirect( SCM_API_URI . 'API/index.html' );
         exit;
     }
 }
