@@ -3,7 +3,7 @@
  * Plugin Name:         SCM API
  * Plugin URI:          http://studiocreativo-m.it/
  * Description:         SCM Plugin Description
- * Version:             1.0.2
+ * Version:             1.0.3
  * Author:              Studio Creativo M
  * Author URI:          http://studiocreativo-m.it/
  * License:             http://www.gnu.org/licenses/gpl-3.0.html
