@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Function scm_acf_fields_sliders | SCM</title>
+	<title>Function scm_contents_single | SCM</title>
 
 	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
 
@@ -321,23 +321,11 @@
 
 			<h3>Functions</h3>
 			<ul>
-				<li><a href="function-scm_acf_fields_advanced_options.html">scm_acf_fields_advanced_options</a></li>
-				<li><a href="function-scm_acf_fields_articoli.html">scm_acf_fields_articoli</a></li>
-				<li><a href="function-scm_acf_fields_banners.html">scm_acf_fields_banners</a></li>
-				<li><a href="function-scm_acf_fields_documenti.html">scm_acf_fields_documenti</a></li>
-				<li><a href="function-scm_acf_fields_gallerie.html">scm_acf_fields_gallerie</a></li>
-				<li><a href="function-scm_acf_fields_luoghi.html">scm_acf_fields_luoghi</a></li>
-				<li><a href="function-scm_acf_fields_modules.html">scm_acf_fields_modules</a></li>
-				<li><a href="function-scm_acf_fields_news.html">scm_acf_fields_news</a></li>
-				<li><a href="function-scm_acf_fields_page.html">scm_acf_fields_page</a></li>
-				<li><a href="function-scm_acf_fields_rassegne_stampa.html">scm_acf_fields_rassegne_stampa</a></li>
-				<li><a href="function-scm_acf_fields_sections.html">scm_acf_fields_sections</a></li>
-				<li class="active"><a href="function-scm_acf_fields_sliders.html">scm_acf_fields_sliders</a></li>
-				<li><a href="function-scm_acf_fields_slides.html">scm_acf_fields_slides</a></li>
-				<li><a href="function-scm_acf_fields_soggetti.html">scm_acf_fields_soggetti</a></li>
-				<li><a href="function-scm_acf_fields_template.html">scm_acf_fields_template</a></li>
-				<li><a href="function-scm_acf_fields_templates.html">scm_acf_fields_templates</a></li>
-				<li><a href="function-scm_acf_fields_video.html">scm_acf_fields_video</a></li>
+				<li><a href="function-scm_containers.html">scm_containers</a></li>
+				<li><a href="function-scm_content.html">scm_content</a></li>
+				<li><a href="function-scm_contents.html">scm_contents</a></li>
+				<li class="active"><a href="function-scm_contents_single.html">scm_contents_single</a></li>
+				<li><a href="function-scm_post.html">scm_post</a></li>
 			</ul>
 		</div>
 	</div>
@@ -375,28 +363,28 @@
 	</div>
 
 <div id="content" class="function">
-	<h1>Function scm_acf_fields_sliders</h1>
+	<h1>Function scm_contents_single</h1>
 
 
 	<div class="description">
-	<p>[GET] Fields SLIDERS</p>
+	<p>[GET] Content Helper</p>
 	</div>
 
 	<div class="info">
 		
-		<b>Package:</b> <a href="package-SCM.html">SCM</a>\<a href="package-SCM.2.ACF.html">2-ACF</a>\<a href="package-SCM.2.ACF.Fields.html">Fields</a>\<a href="package-SCM.2.ACF.Fields.GROUP.html">GROUP</a><br>
+		<b>Package:</b> <a href="package-SCM.html">SCM</a>\<a href="package-SCM.5.Content.html">5-Content</a>\<a href="package-SCM.5.Content.Core.html">Core</a><br>
 		<b>Located at</b>
-			_library/scm-acf-fields-groups.php
+			_library/scm-content-core.php
 <br>
 	</div>
 
 
 	<table class="summary" id="parameters">
 	<caption>Parameters summary</caption>
-	<tr id="$name">
-		<td class="name"><code>{string}</code></td>
-		<td class="value"><code><var>$name</var> = <span class="php-quote">''</span></code></td>
-		<td>name</td>
+	<tr id="$args">
+		<td class="name"><code>{array}</code></td>
+		<td class="value"><code><var>$args</var> = <span class="php-keyword1">array</span>()</code></td>
+		<td>Single content (default is empty array).</td>
 	</tr>
 	</table>
 
@@ -407,7 +395,7 @@
 			{array}
 		</code></td>
 		<td>
-			Fields.
+			Modified Single content.
 		</td>
 	</tr>
 	</table>

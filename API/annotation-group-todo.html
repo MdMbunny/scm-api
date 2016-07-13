@@ -547,6 +547,7 @@
 				<li><a href="function-scm_containers.html">scm_containers</a></li>
 				<li><a href="function-scm_content.html">scm_content</a></li>
 				<li><a href="function-scm_contents.html">scm_contents</a></li>
+				<li><a href="function-scm_contents_single.html">scm_contents_single</a></li>
 				<li><a href="function-scm_credits.html">scm_credits</a></li>
 				<li><a href="function-scm_field.html">scm_field</a></li>
 				<li><a href="function-scm_field_insert.html">scm_field_insert</a></li>
@@ -805,16 +806,6 @@ $folder = ucfirst( ( isset( $meta['file'] ) ? explode( '/', $meta['file'] )[0] :
 
 <pre><span class="php-keyword1">if</span>( is_admin() &amp;&amp; <span class="php-keyword1">isset</span>( <span class="php-var">$_GET</span>[<span class="php-quote">'page'</span>] ) &amp;&amp; <span class="php-var">$_GET</span>[<span class="php-quote">'page'</span>] == <span class="php-quote">'scm-options-intro'</span> )
 scm_roles_reset();</pre><br>
-				</td>
-			</tr>
-			<tr>
-				<td class="name"><code><a href="function-scm_hook_site_register_styles.html">scm_hook_site_register_styles</a></code></td>
-				<td>
-							<p>1 - Se Header PRINT aggiungi:</p>
-
-<pre><span class="php-comment">// SCM Print</span>
-wp_register_style( <span class="php-quote">'print'</span>, SCM_URI_CSS . <span class="php-quote">'scm-print.css'</span>, <span class="php-keyword1">false</span>, <span class="php-keyword1">null</span>, <span class="php-quote">'print'</span> );
-wp_enqueue_style( <span class="php-quote">'print'</span> );</pre><br>
 				</td>
 			</tr>
 			<tr>
