@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Function scm_hook_admin_upload_custom_names | SCM</title>
+	<title>Function scm_fields_insert | SCM</title>
 
 	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
 
@@ -321,14 +321,15 @@
 
 			<h3>Functions</h3>
 			<ul>
-				<li><a href="function-scm_hook_admin_upload_adjust_sizes.html">scm_hook_admin_upload_adjust_sizes</a></li>
-				<li><a href="function-scm_hook_admin_upload_columns.html">scm_hook_admin_upload_columns</a></li>
-				<li><a href="function-scm_hook_admin_upload_custom_column.html">scm_hook_admin_upload_custom_column</a></li>
-				<li class="active"><a href="function-scm_hook_admin_upload_custom_names.html">scm_hook_admin_upload_custom_names</a></li>
-				<li><a href="function-scm_hook_admin_upload_custom_sizes.html">scm_hook_admin_upload_custom_sizes</a></li>
-				<li><a href="function-scm_hook_admin_upload_def_sizes.html">scm_hook_admin_upload_def_sizes</a></li>
-				<li><a href="function-scm_hook_admin_upload_dir.html">scm_hook_admin_upload_dir</a></li>
-				<li><a href="function-scm_hook_admin_upload_max_size.html">scm_hook_admin_upload_max_size</a></li>
+				<li><a href="function-scm_field.html">scm_field</a></li>
+				<li><a href="function-scm_field_add_class.html">scm_field_add_class</a></li>
+				<li><a href="function-scm_field_key.html">scm_field_key</a></li>
+				<li><a href="function-scm_field_objects.html">scm_field_objects</a></li>
+				<li><a href="function-scm_fields.html">scm_fields</a></li>
+				<li><a href="function-scm_fields_add_class.html">scm_fields_add_class</a></li>
+				<li class="active"><a href="function-scm_fields_insert.html">scm_fields_insert</a></li>
+				<li><a href="function-scm_fields_modify.html">scm_fields_modify</a></li>
+				<li><a href="function-scm_fields_remove.html">scm_fields_remove</a></li>
 			</ul>
 		</div>
 	</div>
@@ -366,30 +367,38 @@
 	</div>
 
 <div id="content" class="function">
-	<h1>Function scm_hook_admin_upload_custom_names</h1>
+	<h1>Function scm_fields_insert</h1>
 
 
 	<div class="description">
-	<p>[GET] New size names for uploaded images</p>
-
-<p>Hooked by 'image_size_names_choose'</p>
+	<p>[SET] Insert fields</p>
 	</div>
 
 	<div class="info">
 		
-		<b>Package:</b> <a href="package-SCM.html">SCM</a>\<a href="package-SCM.4.Init.html">4-Init</a>\<a href="package-SCM.4.Init.Admin.html">Admin</a>\<a href="package-SCM.4.Init.Admin.6.UPLOADS.html">6-UPLOADS</a><br>
+		<b>Package:</b> <a href="package-SCM.html">SCM</a>\<a href="package-SCM.2.ACF.html">2-ACF</a>\<a href="package-SCM.2.ACF.FUNCTIONS.html">FUNCTIONS</a><br>
 		<b>Located at</b>
-			_library/scm-init-admin.php
+			_library/scm-acf.php
 <br>
 	</div>
 
 
 	<table class="summary" id="parameters">
 	<caption>Parameters summary</caption>
-	<tr id="$sizes">
+	<tr id="$group">
 		<td class="name"><code>{array=}</code></td>
-		<td class="value"><code><var>$sizes</var> = <span class="php-keyword1">array</span>()</code></td>
-		<td>Original sizes array (default is empty array).</td>
+		<td class="value"><code><var>$group</var> = <span class="php-keyword1">array</span>()</code></td>
+		<td>List of fields or Field Group containing a 'fields' attribute containing a list of fields (default is empty array).</td>
+	</tr>
+	<tr id="$new">
+		<td class="name"><code>{array=}</code></td>
+		<td class="value"><code><var>$new</var> = <span class="php-keyword1">array</span>()</code></td>
+		<td>Single field or list of fields (default is empty array).</td>
+	</tr>
+	<tr id="$index">
+		<td class="name"><code>{int=}</code></td>
+		<td class="value"><code><var>$index</var> = <span class="php-num">0</span></code></td>
+		<td>Index where new fileds are insered (default is 0, first array index).</td>
 	</tr>
 	</table>
 
@@ -400,7 +409,7 @@
 			{array}
 		</code></td>
 		<td>
-			Modified sizes array.
+			Modified Field Group.
 		</td>
 	</tr>
 	</table>
@@ -414,6 +423,6 @@
 </div>
 </div>
 <script src="resources/combined.js?891391119c3495a98e6e0c9a13c56394b0af6375"></script>
-<script src="elementlist.js?df575ddab8a552dedb0e910f51613a167e7e1c79"></script>
+<script src="elementlist.js?df94c99a238c6d4a89168f9d0c28e49bbdf25520"></script>
 </body>
 </html>
