@@ -75,6 +75,11 @@
 						WP					</a>
 
 						</li>
+				<li>
+					<a href="package-SCM.1.Utilities.WPDB.html">
+						WPDB					</a>
+
+						</li>
 							</ul></li>
 				<li>
 					<a href="package-SCM.2.ACF.html">
@@ -237,6 +242,11 @@
 
 						</li>
 				<li>
+					<a href="package-SCM.4.Init.Admin.5.EDIT.html">
+						5-EDIT					</a>
+
+						</li>
+				<li>
 					<a href="package-SCM.4.Init.Admin.5.EMAIL.html">
 						5-EMAIL					</a>
 
@@ -276,6 +286,11 @@
 				<li>
 					<a href="package-SCM.4.Init.Core.3.BODY.html">
 						3-BODY					</a>
+
+						</li>
+				<li>
+					<a href="package-SCM.4.Init.Core.4.QUERY.html">
+						4-QUERY					</a>
 
 						</li>
 							</ul></li>
@@ -321,7 +336,16 @@
 
 			<h3>Functions</h3>
 			<ul>
+				<li><a href="function-arr_insert.html">arr_insert</a></li>
+				<li><a href="function-arr_push.html">arr_push</a></li>
+				<li><a href="function-arr_unshift.html">arr_unshift</a></li>
+				<li><a href="function-array_to_asso.html">array_to_asso</a></li>
 				<li><a href="function-arrayToHTML.html">arrayToHTML</a></li>
+				<li><a href="function-asso_insert.html">asso_insert</a></li>
+				<li><a href="function-asso_insert_after.html">asso_insert_after</a></li>
+				<li><a href="function-asso_insert_before.html">asso_insert_before</a></li>
+				<li><a href="function-asso_push.html">asso_push</a></li>
+				<li><a href="function-asso_unshift.html">asso_unshift</a></li>
 				<li><a href="function-copyArray.html">copyArray</a></li>
 				<li><a href="function-delArray.html">delArray</a></li>
 				<li><a href="function-ex_attr.html">ex_attr</a></li>
@@ -334,12 +358,12 @@
 				<li><a href="function-getByString.html">getByString</a></li>
 				<li><a href="function-getByValue.html">getByValue</a></li>
 				<li><a href="function-getByValueKey.html">getByValueKey</a></li>
-				<li><a href="function-insertArray.html">insertArray</a></li>
 				<li><a href="function-is_arr.html">is_arr</a></li>
 				<li><a href="function-is_asso.html">is_asso</a></li>
 				<li><a href="function-is_attr.html">is_attr</a></li>
 				<li><a href="function-is_list.html">is_list</a></li>
 				<li class="active"><a href="function-subArray.html">subArray</a></li>
+				<li><a href="function-subObject.html">subObject</a></li>
 				<li><a href="function-toArray.html">toArray</a></li>
 			</ul>
 		</div>
@@ -388,9 +412,13 @@
 
 <pre><span class="php-var">$arr</span> = [ [ <span class="php-quote">'id'</span>=&gt;<span class="php-quote">'JN'</span>,<span class="php-quote">'num'</span>=&gt;<span class="php-quote">'one'</span>,<span class="php-quote">'cat'</span>=&gt;<span class="php-num">0</span> ], [ <span class="php-quote">'id'</span>=&gt;<span class="php-quote">'PT'</span>,<span class="php-quote">'num'</span>=&gt;<span class="php-quote">'two'</span>,<span class="php-quote">'cat'</span>=&gt;<span class="php-num">1</span> ], [ <span class="php-quote">'id'</span>=&gt;<span class="php-quote">'SM'</span>,<span class="php-quote">'num'</span>=&gt;<span class="php-quote">'three'</span>,<span class="php-quote">'cat'</span>=&gt;<span class="php-num">1</span> ]];
 
-<span class="php-comment">// With $filter</span>
+<span class="php-comment">// With $filter (include)</span>
 <span class="php-var">$sub</span> = subArray( <span class="php-var">$arr</span>, <span class="php-quote">''</span>, <span class="php-quote">''</span>, [ <span class="php-quote">'cat'</span>=&gt;<span class="php-num">1</span> ] );
 <span class="php-keyword1">print</span>( <span class="php-var">$sub</span> ) <span class="php-comment">// [ [ 'id'=&gt;'PT', 'num'=&gt;'two', 'cat'=&gt;1 ], [ 'id'=&gt;'SM', 'num'=&gt;'three', 'cat'=&gt;1 ] ]</span>
+
+<span class="php-comment">// With $filter (exclude)</span>
+<span class="php-var">$sub</span> = subArray( <span class="php-var">$arr</span>, <span class="php-quote">''</span>, <span class="php-quote">''</span>, [ <span class="php-quote">'cat'</span>=&gt;<span class="php-num">1</span> ], <span class="php-keyword1">true</span> );
+<span class="php-keyword1">print</span>( <span class="php-var">$sub</span> ) <span class="php-comment">// [ [ 'id'=&gt;'JN','num'=&gt;'one','cat'=&gt;0 ] ]</span>
 
 <span class="php-comment">// With $att_v and $att_k</span>
 <span class="php-var">$sub</span> = subArray( <span class="php-var">$arr</span>, <span class="php-quote">'id'</span>, <span class="php-quote">'num'</span> );
@@ -432,6 +460,11 @@
 		<td class="value"><code><var>$filter</var> = <span class="php-keyword1">array</span>()</code></td>
 		<td>Filter items by key and value (default is empty array).</td>
 	</tr>
+	<tr id="$exclude">
+		<td class="name"><code></code></td>
+		<td class="value"><code><var>$exclude</var> = <span class="php-keyword1">false</span></code></td>
+		<td></td>
+	</tr>
 	</table>
 
 	<table class="summary" id="returns">
@@ -455,6 +488,6 @@
 </div>
 </div>
 <script src="resources/combined.js?891391119c3495a98e6e0c9a13c56394b0af6375"></script>
-<script src="elementlist.js?df94c99a238c6d4a89168f9d0c28e49bbdf25520"></script>
+<script src="elementlist.js?66e4109741641b4905e2e8df03e77e9d2989e53d"></script>
 </body>
 </html>

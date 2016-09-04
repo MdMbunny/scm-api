@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Function scm_acf_options_head_branding | SCM</title>
+	<title>Function getQueryVar | SCM</title>
 
 	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
 
@@ -73,6 +73,11 @@
 				<li>
 					<a href="package-SCM.1.Utilities.WP.html">
 						WP					</a>
+
+						</li>
+				<li>
+					<a href="package-SCM.1.Utilities.WPDB.html">
+						WPDB					</a>
 
 						</li>
 							</ul></li>
@@ -237,6 +242,11 @@
 
 						</li>
 				<li>
+					<a href="package-SCM.4.Init.Admin.5.EDIT.html">
+						5-EDIT					</a>
+
+						</li>
+				<li>
 					<a href="package-SCM.4.Init.Admin.5.EMAIL.html">
 						5-EMAIL					</a>
 
@@ -276,6 +286,11 @@
 				<li>
 					<a href="package-SCM.4.Init.Core.3.BODY.html">
 						3-BODY					</a>
+
+						</li>
+				<li>
+					<a href="package-SCM.4.Init.Core.4.QUERY.html">
+						4-QUERY					</a>
 
 						</li>
 							</ul></li>
@@ -321,21 +336,14 @@
 
 			<h3>Functions</h3>
 			<ul>
-				<li><a href="function-scm_acf_options_default_taxonomies.html">scm_acf_options_default_taxonomies</a></li>
-				<li><a href="function-scm_acf_options_default_types.html">scm_acf_options_default_types</a></li>
-				<li><a href="function-scm_acf_options_foot.html">scm_acf_options_foot</a></li>
-				<li><a href="function-scm_acf_options_general.html">scm_acf_options_general</a></li>
-				<li><a href="function-scm_acf_options_head.html">scm_acf_options_head</a></li>
-				<li class="active"><a href="function-scm_acf_options_head_branding.html">scm_acf_options_head_branding</a></li>
-				<li><a href="function-scm_acf_options_head_menu.html">scm_acf_options_head_menu</a></li>
-				<li><a href="function-scm_acf_options_head_social.html">scm_acf_options_head_social</a></li>
-				<li><a href="function-scm_acf_options_intro.html">scm_acf_options_intro</a></li>
-				<li><a href="function-scm_acf_options_layout.html">scm_acf_options_layout</a></li>
-				<li><a href="function-scm_acf_options_roles.html">scm_acf_options_roles</a></li>
-				<li><a href="function-scm_acf_options_slider.html">scm_acf_options_slider</a></li>
-				<li><a href="function-scm_acf_options_styles.html">scm_acf_options_styles</a></li>
-				<li><a href="function-scm_acf_options_taxonomies.html">scm_acf_options_taxonomies</a></li>
-				<li><a href="function-scm_acf_options_types.html">scm_acf_options_types</a></li>
+				<li><a href="function-compare.html">compare</a></li>
+				<li><a href="function-exists.html">exists</a></li>
+				<li class="active"><a href="function-getQueryVar.html">getQueryVar</a></li>
+				<li><a href="function-ifequal.html">ifequal</a></li>
+				<li><a href="function-ifexists.html">ifexists</a></li>
+				<li><a href="function-ifnotequal.html">ifnotequal</a></li>
+				<li><a href="function-is.html">is</a></li>
+				<li><a href="function-isNumber.html">isNumber</a></li>
 			</ul>
 		</div>
 	</div>
@@ -373,28 +381,33 @@
 	</div>
 
 <div id="content" class="function">
-	<h1>Function scm_acf_options_head_branding</h1>
+	<h1>Function getQueryVar</h1>
 
 
 	<div class="description">
-	<p>[GET] Options head branding</p>
+	<p>[GET] Get Query var</p>
 	</div>
 
 	<div class="info">
 		
-		<b>Package:</b> <a href="package-SCM.html">SCM</a>\<a href="package-SCM.2.ACF.html">2-ACF</a>\<a href="package-SCM.2.ACF.Fields.html">Fields</a>\<a href="package-SCM.2.ACF.Fields.OPTIONS.html">OPTIONS</a><br>
+		<b>Package:</b> <a href="package-SCM.html">SCM</a>\<a href="package-SCM.1.Utilities.html">1-Utilities</a>\<a href="package-SCM.1.Utilities.MISC.html">MISC</a><br>
 		<b>Located at</b>
-			_library/scm-acf-fields-options.php
+			_library/scm-utils.php
 <br>
 	</div>
 
 
 	<table class="summary" id="parameters">
 	<caption>Parameters summary</caption>
-	<tr id="$name">
-		<td class="name"><code>{string}</code></td>
-		<td class="value"><code><var>$name</var> = <span class="php-quote">''</span></code></td>
-		<td>name</td>
+	<tr id="$var">
+		<td class="name"><code>{string=}</code></td>
+		<td class="value"><code><var>$var</var> = <span class="php-quote">''</span></code></td>
+		<td>Var name (default is '').</td>
+	</tr>
+	<tr id="$fallback">
+		<td class="name"><code>{misc=}</code></td>
+		<td class="value"><code><var>$fallback</var> = <span class="php-quote">''</span></code></td>
+		<td>Fallback (default is '').</td>
 	</tr>
 	</table>
 
@@ -402,10 +415,10 @@
 	<caption>Return value summary</caption>
 	<tr>
 		<td class="name"><code>
-			{array}
+			{misc}
 		</code></td>
 		<td>
-			Fields.
+			Query var value or fallback.
 		</td>
 	</tr>
 	</table>
@@ -419,6 +432,6 @@
 </div>
 </div>
 <script src="resources/combined.js?891391119c3495a98e6e0c9a13c56394b0af6375"></script>
-<script src="elementlist.js?df94c99a238c6d4a89168f9d0c28e49bbdf25520"></script>
+<script src="elementlist.js?66e4109741641b4905e2e8df03e77e9d2989e53d"></script>
 </body>
 </html>

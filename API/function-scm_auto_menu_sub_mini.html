@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Function scm_acf_options_head_menu | SCM</title>
+	<title>Function scm_auto_menu_sub_mini | SCM</title>
 
 	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
 
@@ -73,6 +73,11 @@
 				<li>
 					<a href="package-SCM.1.Utilities.WP.html">
 						WP					</a>
+
+						</li>
+				<li>
+					<a href="package-SCM.1.Utilities.WPDB.html">
+						WPDB					</a>
 
 						</li>
 							</ul></li>
@@ -237,6 +242,11 @@
 
 						</li>
 				<li>
+					<a href="package-SCM.4.Init.Admin.5.EDIT.html">
+						5-EDIT					</a>
+
+						</li>
+				<li>
 					<a href="package-SCM.4.Init.Admin.5.EMAIL.html">
 						5-EMAIL					</a>
 
@@ -278,6 +288,11 @@
 						3-BODY					</a>
 
 						</li>
+				<li>
+					<a href="package-SCM.4.Init.Core.4.QUERY.html">
+						4-QUERY					</a>
+
+						</li>
 							</ul></li>
 				<li>
 					<a href="package-SCM.4.Init.Feed.html">
@@ -314,6 +329,10 @@
 
 
 		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Sublevel_Walker.html">Sublevel_Walker</a></li>
+			</ul>
 
 
 
@@ -321,21 +340,24 @@
 
 			<h3>Functions</h3>
 			<ul>
-				<li><a href="function-scm_acf_options_default_taxonomies.html">scm_acf_options_default_taxonomies</a></li>
-				<li><a href="function-scm_acf_options_default_types.html">scm_acf_options_default_types</a></li>
-				<li><a href="function-scm_acf_options_foot.html">scm_acf_options_foot</a></li>
-				<li><a href="function-scm_acf_options_general.html">scm_acf_options_general</a></li>
-				<li><a href="function-scm_acf_options_head.html">scm_acf_options_head</a></li>
-				<li><a href="function-scm_acf_options_head_branding.html">scm_acf_options_head_branding</a></li>
-				<li class="active"><a href="function-scm_acf_options_head_menu.html">scm_acf_options_head_menu</a></li>
-				<li><a href="function-scm_acf_options_head_social.html">scm_acf_options_head_social</a></li>
-				<li><a href="function-scm_acf_options_intro.html">scm_acf_options_intro</a></li>
-				<li><a href="function-scm_acf_options_layout.html">scm_acf_options_layout</a></li>
-				<li><a href="function-scm_acf_options_roles.html">scm_acf_options_roles</a></li>
-				<li><a href="function-scm_acf_options_slider.html">scm_acf_options_slider</a></li>
-				<li><a href="function-scm_acf_options_styles.html">scm_acf_options_styles</a></li>
-				<li><a href="function-scm_acf_options_taxonomies.html">scm_acf_options_taxonomies</a></li>
-				<li><a href="function-scm_acf_options_types.html">scm_acf_options_types</a></li>
+				<li><a href="function-scm_auto_menu.html">scm_auto_menu</a></li>
+				<li><a href="function-scm_auto_menu_item.html">scm_auto_menu_item</a></li>
+				<li><a href="function-scm_auto_menu_sub.html">scm_auto_menu_sub</a></li>
+				<li class="active"><a href="function-scm_auto_menu_sub_mini.html">scm_auto_menu_sub_mini</a></li>
+				<li><a href="function-scm_get_menu.html">scm_get_menu</a></li>
+				<li><a href="function-scm_get_menu_item_close.html">scm_get_menu_item_close</a></li>
+				<li><a href="function-scm_get_menu_item_open.html">scm_get_menu_item_open</a></li>
+				<li><a href="function-scm_get_submenu_close.html">scm_get_submenu_close</a></li>
+				<li><a href="function-scm_get_submenu_open.html">scm_get_submenu_open</a></li>
+				<li><a href="function-scm_logo.html">scm_logo</a></li>
+				<li><a href="function-scm_main_menu.html">scm_main_menu</a></li>
+				<li><a href="function-scm_mini_menu.html">scm_mini_menu</a></li>
+				<li><a href="function-scm_mono_menu.html">scm_mono_menu</a></li>
+				<li><a href="function-scm_pagination.html">scm_pagination</a></li>
+				<li><a href="function-scm_pagination_more.html">scm_pagination_more</a></li>
+				<li><a href="function-scm_side_menu.html">scm_side_menu</a></li>
+				<li><a href="function-scm_social_follow.html">scm_social_follow</a></li>
+				<li><a href="function-scm_top_of_page.html">scm_top_of_page</a></li>
 			</ul>
 		</div>
 	</div>
@@ -373,28 +395,38 @@
 	</div>
 
 <div id="content" class="function">
-	<h1>Function scm_acf_options_head_menu</h1>
+	<h1>Function scm_auto_menu_sub_mini</h1>
 
 
 	<div class="description">
-	<p>[GET] Options head menu</p>
+	<p>[GET] Sub menu Mini for Menu Auto</p>
 	</div>
 
 	<div class="info">
 		
-		<b>Package:</b> <a href="package-SCM.html">SCM</a>\<a href="package-SCM.2.ACF.html">2-ACF</a>\<a href="package-SCM.2.ACF.Fields.html">Fields</a>\<a href="package-SCM.2.ACF.Fields.OPTIONS.html">OPTIONS</a><br>
+		<b>Package:</b> <a href="package-SCM.html">SCM</a>\<a href="package-SCM.5.Content.html">5-Content</a>\<a href="package-SCM.5.Content.Front.html">Front</a><br>
 		<b>Located at</b>
-			_library/scm-acf-fields-options.php
+			_library/scm-content-front.php
 <br>
 	</div>
 
 
 	<table class="summary" id="parameters">
 	<caption>Parameters summary</caption>
-	<tr id="$name">
-		<td class="name"><code>{string}</code></td>
-		<td class="value"><code><var>$name</var> = <span class="php-quote">''</span></code></td>
-		<td>name</td>
+	<tr id="$children">
+		<td class="name"><code>{array}</code></td>
+		<td class="value"><code><var>$children</var></code></td>
+		<td>children.</td>
+	</tr>
+	<tr id="$depth">
+		<td class="name"><code>{int=}</code></td>
+		<td class="value"><code><var>$depth</var> = <span class="php-num">0</span></code></td>
+		<td>(default is 0).</td>
+	</tr>
+	<tr id="$menu">
+		<td class="name"><code></code></td>
+		<td class="value"><code><var>$menu</var> = <span class="php-quote">'main'</span></code></td>
+		<td></td>
 	</tr>
 	</table>
 
@@ -402,10 +434,10 @@
 	<caption>Return value summary</caption>
 	<tr>
 		<td class="name"><code>
-			{array}
+			{string}
 		</code></td>
 		<td>
-			Fields.
+			HTML tag.
 		</td>
 	</tr>
 	</table>
@@ -419,6 +451,6 @@
 </div>
 </div>
 <script src="resources/combined.js?891391119c3495a98e6e0c9a13c56394b0af6375"></script>
-<script src="elementlist.js?df94c99a238c6d4a89168f9d0c28e49bbdf25520"></script>
+<script src="elementlist.js?66e4109741641b4905e2e8df03e77e9d2989e53d"></script>
 </body>
 </html>

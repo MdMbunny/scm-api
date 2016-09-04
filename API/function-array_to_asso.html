@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Function scm_credits | SCM</title>
+	<title>Function array_to_asso | SCM</title>
 
 	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
 
@@ -73,6 +73,11 @@
 				<li>
 					<a href="package-SCM.1.Utilities.WP.html">
 						WP					</a>
+
+						</li>
+				<li>
+					<a href="package-SCM.1.Utilities.WPDB.html">
+						WPDB					</a>
 
 						</li>
 							</ul></li>
@@ -237,6 +242,11 @@
 
 						</li>
 				<li>
+					<a href="package-SCM.4.Init.Admin.5.EDIT.html">
+						5-EDIT					</a>
+
+						</li>
+				<li>
 					<a href="package-SCM.4.Init.Admin.5.EMAIL.html">
 						5-EMAIL					</a>
 
@@ -278,6 +288,11 @@
 						3-BODY					</a>
 
 						</li>
+				<li>
+					<a href="package-SCM.4.Init.Core.4.QUERY.html">
+						4-QUERY					</a>
+
+						</li>
 							</ul></li>
 				<li>
 					<a href="package-SCM.4.Init.Feed.html">
@@ -314,10 +329,6 @@
 
 
 		<div id="elements">
-			<h3>Classes</h3>
-			<ul>
-				<li><a href="class-Sublevel_Walker.html">Sublevel_Walker</a></li>
-			</ul>
 
 
 
@@ -325,13 +336,35 @@
 
 			<h3>Functions</h3>
 			<ul>
-				<li class="active"><a href="function-scm_credits.html">scm_credits</a></li>
-				<li><a href="function-scm_get_menu.html">scm_get_menu</a></li>
-				<li><a href="function-scm_logo.html">scm_logo</a></li>
-				<li><a href="function-scm_main_menu.html">scm_main_menu</a></li>
-				<li><a href="function-scm_pagination.html">scm_pagination</a></li>
-				<li><a href="function-scm_social_follow.html">scm_social_follow</a></li>
-				<li><a href="function-scm_top_of_page.html">scm_top_of_page</a></li>
+				<li><a href="function-arr_insert.html">arr_insert</a></li>
+				<li><a href="function-arr_push.html">arr_push</a></li>
+				<li><a href="function-arr_unshift.html">arr_unshift</a></li>
+				<li class="active"><a href="function-array_to_asso.html">array_to_asso</a></li>
+				<li><a href="function-arrayToHTML.html">arrayToHTML</a></li>
+				<li><a href="function-asso_insert.html">asso_insert</a></li>
+				<li><a href="function-asso_insert_after.html">asso_insert_after</a></li>
+				<li><a href="function-asso_insert_before.html">asso_insert_before</a></li>
+				<li><a href="function-asso_push.html">asso_push</a></li>
+				<li><a href="function-asso_unshift.html">asso_unshift</a></li>
+				<li><a href="function-copyArray.html">copyArray</a></li>
+				<li><a href="function-delArray.html">delArray</a></li>
+				<li><a href="function-ex_attr.html">ex_attr</a></li>
+				<li><a href="function-getAllByPrefix.html">getAllByPrefix</a></li>
+				<li><a href="function-getAllByString.html">getAllByString</a></li>
+				<li><a href="function-getAllByValueKey.html">getAllByValueKey</a></li>
+				<li><a href="function-getAllByValuePrefixKey.html">getAllByValuePrefixKey</a></li>
+				<li><a href="function-getByKey.html">getByKey</a></li>
+				<li><a href="function-getByPrefix.html">getByPrefix</a></li>
+				<li><a href="function-getByString.html">getByString</a></li>
+				<li><a href="function-getByValue.html">getByValue</a></li>
+				<li><a href="function-getByValueKey.html">getByValueKey</a></li>
+				<li><a href="function-is_arr.html">is_arr</a></li>
+				<li><a href="function-is_asso.html">is_asso</a></li>
+				<li><a href="function-is_attr.html">is_attr</a></li>
+				<li><a href="function-is_list.html">is_list</a></li>
+				<li><a href="function-subArray.html">subArray</a></li>
+				<li><a href="function-subObject.html">subObject</a></li>
+				<li><a href="function-toArray.html">toArray</a></li>
 			</ul>
 		</div>
 	</div>
@@ -369,23 +402,42 @@
 	</div>
 
 <div id="content" class="function">
-	<h1>Function scm_credits</h1>
+	<h1>Function array_to_asso</h1>
 
 
 	<div class="description">
-	<p>[ECHO] Footer credits</p>
+	<p>[GET] To associative array</p>
 	</div>
 
 	<div class="info">
 		
-		<b>Package:</b> <a href="package-SCM.html">SCM</a>\<a href="package-SCM.5.Content.html">5-Content</a>\<a href="package-SCM.5.Content.Front.html">Front</a><br>
+		<b>Package:</b> <a href="package-SCM.html">SCM</a>\<a href="package-SCM.1.Utilities.html">1-Utilities</a>\<a href="package-SCM.1.Utilities.ARRAY.html">ARRAY</a><br>
 		<b>Located at</b>
-			_library/scm-content-front.php
+			_library/scm-utils.php
 <br>
 	</div>
 
 
+	<table class="summary" id="parameters">
+	<caption>Parameters summary</caption>
+	<tr id="$arr">
+		<td class="name"><code>{array}</code></td>
+		<td class="value"><code><var>$arr</var></code></td>
+		<td>Array to convert.</td>
+	</tr>
+	</table>
 
+	<table class="summary" id="returns">
+	<caption>Return value summary</caption>
+	<tr>
+		<td class="name"><code>
+			{array|null}
+		</code></td>
+		<td>
+			NULL if arr is not an array. It returns an associative array.
+		</td>
+	</tr>
+	</table>
 
 
 </div>
@@ -396,6 +448,6 @@
 </div>
 </div>
 <script src="resources/combined.js?891391119c3495a98e6e0c9a13c56394b0af6375"></script>
-<script src="elementlist.js?df94c99a238c6d4a89168f9d0c28e49bbdf25520"></script>
+<script src="elementlist.js?66e4109741641b4905e2e8df03e77e9d2989e53d"></script>
 </body>
 </html>

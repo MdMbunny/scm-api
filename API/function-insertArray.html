@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Function insertArray | SCM</title>
+	<title>Deprecated Function insertArray | SCM</title>
 
 	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
 
@@ -73,6 +73,11 @@
 				<li>
 					<a href="package-SCM.1.Utilities.WP.html">
 						WP					</a>
+
+						</li>
+				<li>
+					<a href="package-SCM.1.Utilities.WPDB.html">
+						WPDB					</a>
 
 						</li>
 							</ul></li>
@@ -237,6 +242,11 @@
 
 						</li>
 				<li>
+					<a href="package-SCM.4.Init.Admin.5.EDIT.html">
+						5-EDIT					</a>
+
+						</li>
+				<li>
 					<a href="package-SCM.4.Init.Admin.5.EMAIL.html">
 						5-EMAIL					</a>
 
@@ -276,6 +286,11 @@
 				<li>
 					<a href="package-SCM.4.Init.Core.3.BODY.html">
 						3-BODY					</a>
+
+						</li>
+				<li>
+					<a href="package-SCM.4.Init.Core.4.QUERY.html">
+						4-QUERY					</a>
 
 						</li>
 							</ul></li>
@@ -321,26 +336,12 @@
 
 			<h3>Functions</h3>
 			<ul>
-				<li><a href="function-arrayToHTML.html">arrayToHTML</a></li>
-				<li><a href="function-copyArray.html">copyArray</a></li>
-				<li><a href="function-delArray.html">delArray</a></li>
-				<li><a href="function-ex_attr.html">ex_attr</a></li>
-				<li><a href="function-getAllByPrefix.html">getAllByPrefix</a></li>
-				<li><a href="function-getAllByString.html">getAllByString</a></li>
-				<li><a href="function-getAllByValueKey.html">getAllByValueKey</a></li>
-				<li><a href="function-getAllByValuePrefixKey.html">getAllByValuePrefixKey</a></li>
-				<li><a href="function-getByKey.html">getByKey</a></li>
-				<li><a href="function-getByPrefix.html">getByPrefix</a></li>
-				<li><a href="function-getByString.html">getByString</a></li>
-				<li><a href="function-getByValue.html">getByValue</a></li>
-				<li><a href="function-getByValueKey.html">getByValueKey</a></li>
-				<li class="active"><a href="function-insertArray.html">insertArray</a></li>
-				<li><a href="function-is_arr.html">is_arr</a></li>
-				<li><a href="function-is_asso.html">is_asso</a></li>
-				<li><a href="function-is_attr.html">is_attr</a></li>
-				<li><a href="function-is_list.html">is_list</a></li>
-				<li><a href="function-subArray.html">subArray</a></li>
-				<li><a href="function-toArray.html">toArray</a></li>
+				<li class="active"><a href="function-insertArray.html" class="deprecated">insertArray</a></li>
+				<li><a href="function-postExists.html">postExists</a></li>
+				<li><a href="function-wpdbInsertPost.html">wpdbInsertPost</a></li>
+				<li><a href="function-wpdbInsertPosts.html">wpdbInsertPosts</a></li>
+				<li><a href="function-wpdbNewCustomPosts.html">wpdbNewCustomPosts</a></li>
+				<li><a href="function-wpdbTaxonomy.html">wpdbTaxonomy</a></li>
 			</ul>
 		</div>
 	</div>
@@ -378,28 +379,20 @@
 	</div>
 
 <div id="content" class="function">
-	<h1>Function insertArray</h1>
+	<h1 class="deprecated">Function insertArray</h1>
 
 
 	<div class="description">
-	<p>[SET] Insert or replace value in array</p>
-
-<p>Example usage:</p>
-
-<pre><span class="php-var">$arr</span> = [ <span class="php-quote">'insert'</span>, <span class="php-quote">'element'</span> ];
-
-<span class="php-comment">// Insert item in array</span>
-insertArray( <span class="php-var">$arr</span>, <span class="php-num">1</span>, <span class="php-quote">'an'</span> );
-<span class="php-keyword1">print</span>( <span class="php-var">$arr</span> ) <span class="php-comment">// [ 'insert', 'an', 'element' ]</span>
-
-<span class="php-comment">// Replace item in array</span>
-insertArray( <span class="php-var">$arr</span>, <span class="php-num">2</span>, <span class="php-quote">'elephant'</span>, <span class="php-keyword1">true</span> );
-<span class="php-keyword1">print</span>( <span class="php-var">$arr</span> ) <span class="php-comment">// [ 'insert', 'an', 'elephant' ]</span></pre>
+	<p>[SET] Insert or replace value in array (deprecated)</p>
 	</div>
 
 	<div class="info">
 		
-		<b>Package:</b> <a href="package-SCM.html">SCM</a>\<a href="package-SCM.1.Utilities.html">1-Utilities</a>\<a href="package-SCM.1.Utilities.ARRAY.html">ARRAY</a><br>
+		<b>Package:</b> <a href="package-SCM.html">SCM</a>\<a href="package-SCM.1.Utilities.html">1-Utilities</a><br>
+				<b>Deprecated:</b>
+				Use arr_insert()<br>
+				<b>See:</b>
+				<code><a href="function-arr_insert.html">arr_insert()</a></code><br>
 		<b>Located at</b>
 			_library/scm-utils.php
 <br>
@@ -409,24 +402,24 @@ insertArray( <span class="php-var">$arr</span>, <span class="php-num">2</span>, 
 	<table class="summary" id="parameters">
 	<caption>Parameters summary</caption>
 	<tr id="$arr">
-		<td class="name"><code>{array}</code></td>
+		<td class="name"><code></code></td>
 		<td class="value"><code><var>&amp; $arr</var></code></td>
-		<td>Array where to insert value.</td>
+		<td></td>
 	</tr>
 	<tr id="$offset">
-		<td class="name"><code>{int=}</code></td>
+		<td class="name"><code></code></td>
 		<td class="value"><code><var>$offset</var> = <span class="php-num">0</span></code></td>
-		<td>Index where to insert value (default is 0).</td>
+		<td></td>
 	</tr>
 	<tr id="$value">
-		<td class="name"><code>{misc=}</code></td>
+		<td class="name"><code></code></td>
 		<td class="value"><code><var>$value</var> = <span class="php-quote">''</span></code></td>
-		<td>Value to be insered (default is '').</td>
+		<td></td>
 	</tr>
 	<tr id="$replace">
-		<td class="name"><code>{boolean=}</code></td>
+		<td class="name"><code></code></td>
 		<td class="value"><code><var>$replace</var> = <span class="php-keyword1">false</span></code></td>
-		<td>Replace value at index with the new one (default is false).</td>
+		<td></td>
 	</tr>
 	</table>
 
@@ -451,6 +444,6 @@ insertArray( <span class="php-var">$arr</span>, <span class="php-num">2</span>, 
 </div>
 </div>
 <script src="resources/combined.js?891391119c3495a98e6e0c9a13c56394b0af6375"></script>
-<script src="elementlist.js?df94c99a238c6d4a89168f9d0c28e49bbdf25520"></script>
+<script src="elementlist.js?66e4109741641b4905e2e8df03e77e9d2989e53d"></script>
 </body>
 </html>
